@@ -1,0 +1,229 @@
+*{
+    box-sizing: border-box; /*ölçüleri sabit kılmak çin*/
+}
+body{
+    margin: 0;   /*Dış boşluk- Her bir taraftan*/ 
+    padding: 0;  /*İç boşluk- Her bir taraftan*/ 
+    background-color: dimgray;
+    font-family: 'Merriweather', serif;
+}
+
+#social{
+    background-color: bisque;       /**/ 
+    color: black;
+    height: 50px;
+    width: 100%;
+    position: sticky;  /*Pozisyon sabit kalsın*/
+    top: 0; /*Nerede sabit kalsın*/
+    z-index: 1; /*Hiçbir şey bunun  üstüne çıkmasın*/
+    font-size: 20px;
+    font-weight: bold;
+    text-align: right;
+    padding: 12px;
+}
+
+#font1{
+    float: left;
+    letter-spacing: 2px;
+}
+
+#span1{
+    font-size: 12px;
+    letter-spacing: 1px;
+}
+
+#social>a{
+    margin-right: 15px;
+    color: black;
+    font-size: 25px;
+}
+
+#social>a:hover{
+    opacity: 0.6;
+}
+
+#container{
+    width: 85%;
+    margin: auto; /*Sol ve sağ boşlukları eşit*/ 
+    height: auto;
+    /*border: 3px solid rgb(43, 15, 15);*/
+}
+
+header{
+    width: 100%;
+    height: 300px;
+    box-shadow: 0 2px 8px 2px rgb(12, 18, 34);
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border-top-left-radius: 15px;                 /**/ 
+    border-top-right-radius: 15px;
+    position: relative;
+    font-family: 'Roboto Mono', monospace;
+    margin-bottom: 20px;
+    
+}
+#resim1{
+    width: 100%;
+    height: 300px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+#centered{
+    position: absolute;
+    top: 60%;
+    left: 49%;
+    transform: translate(-50%,-50%);  /*Yazının tam ortalanabilmesi için*/ 
+    font-style: italic;
+    color: rgb(92, 72, 48);  
+}
+
+section{
+    width: 100%;
+    height: auto;
+    background-color: ivory;
+    opacity: 0.6;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    box-shadow: 0 2px 8px 2px rgb(12, 18, 34);
+    overflow: auto; /* Nav'ı  sığdır*/
+}
+
+nav{
+    width: 20%;
+    height: auto;
+    float: left;
+    margin-top: 10px;
+}
+
+nav ul{
+    width: auto;
+    height: 100%;
+    margin: 5px;
+    padding: 5px;
+}
+
+nav li{ 
+    list-style-type: none;
+}
+
+nav li a{
+    height: auto;
+    line-height: 50px;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    border-bottom: 1px solid rgb(12, 18, 34);    
+    padding-left: 20px;
+    display: block;
+}
+nav li a:hover{
+    color: bisque;
+    background-color: lightslategray;
+}
+
+nav li i{
+    margin-right: 10px;
+    font-size: 20px;
+}
+
+main{
+    float: left;
+    height: auto;
+    width: 80%;
+    padding: 10px;
+}
+
+.info{
+    width: 100%;
+    height: auto;
+    display: inline-block;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px 2px rgb(12, 18, 34);
+    position: relative;
+    margin-top: 15px;
+}
+
+.images{
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    transition: opacity 0.8s;
+}
+
+.images:hover{
+    opacity: 0.7;
+}
+
+#welcome{
+    position: absolute;
+    top: 37%;
+    left: 55%;
+    transform: translate(-50%,-50%);  /*Yazının tam ortalanabilmesi için*/ 
+    font-style: italic;
+    font-family: 'Lobster', cursive;
+    font-size: 35px;
+    letter-spacing: 2px;
+    color: rgb(7, 5, 4);  
+}
+.info h5{
+    margin: 10px;
+    margin-left: 10px;
+    margin-top: 17px;
+    margin-bottom: 17px;
+    font-size: 25px;
+    font-weight: bold;
+    color: dimgray;
+}
+
+.info p{
+    margin: 10px;
+    margin-top: 15px;
+    font-size: 22px;
+    line-height: 1.6;         /**/
+    font-family: 'Oswald', sans-serif;
+    letter-spacing: 2px;
+}
+
+footer{
+    width: 100%;
+    height: 50px;
+    background-color: black;
+    color: blanchedalmond;
+    line-height: 50px;
+    text-align: center;
+    box-shadow: 0 2px 8px 2px rgb(12, 18, 34);
+
+}
+
+#date{
+    float: right;
+    margin-right: 10px;
+}
+
+.info h4{
+    margin: 5px;
+    margin-top: 15px;
+    margin-left: 10px;
+    font-size: 22px;
+    font-weight: bold;
+    color: black;
+    font-family: 'Oswald', sans-serif;
+    letter-spacing: 2px;
+
+}
+
+.info li{
+    margin-left: 70px;
+    font-size: 19px;
+    line-height: 1.5;         /**/
+    letter-spacing: 2px;
+    font-family: 'Oswald', sans-serif;
+
+}
+
+.info ul{
+
+    margin: 10px;
+    padding: 10px;
+}
